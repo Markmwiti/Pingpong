@@ -1,16 +1,21 @@
 $(document).ready(function() {
-    $("form#leap-year").submit(function(event) {
+    $("form#PING-PONG").submit(function(event) {
       event.preventDefault();
-      var year = parseInt($("input#year").val());
-      var result = leapYear(year);
+      var number = parseInt($("input#number").val());
+      var result = PINGPONG(number);
       $("#result").text(result);
+      $("button#PING PONG").click(function)(){
+      }
     });
   });
 
-  var leapYear = function(year) {
-    if (year % 4 === 0) {
-      return true;
-    } else {
-      return false;
-    }
-  };
+  var PINGPONG=function(number)
+    for (number = 1; number <=3; number+=3) {
+  console.log('ping');
+}
+      if (number % 3) {
+        return true;
+      } else {
+        return false;
+      }
+    };
