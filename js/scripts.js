@@ -6,16 +6,10 @@ $(document).ready(function() {
       $("#result").text(result);
       $("button#PING PONG").click(function)(){
       }
-    });
-  });
 
-  var PINGPONG=function(number)
-    for (number = 1; number <=3; number+=3) {
-  console.log('ping');
-}
-      if (number % 3) {
-        return true;
-      } else {
-        return false;
-      }
-    };
+    });
+  })
+
+  var PINGPONG = function(number) {
+    return false;
+  };
